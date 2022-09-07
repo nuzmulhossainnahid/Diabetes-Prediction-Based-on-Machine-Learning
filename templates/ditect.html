@@ -83,11 +83,11 @@
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Predicate</a>
                             <div class="dropdown-menu border-0 rounded-0 m-0">
-                                <a href="" class="dropdown-item">Kidney</a>
-                                <a href="" class="dropdown-item">Heart</a>
-                                <a href="" class="dropdown-item">Diabetes</a>
-                                <a href="" class="dropdown-item">Skin</a>
-                                <a href="" class="dropdown-item">Liver</a>
+                                <a href="http://192.168.0.100:5000/" class="dropdown-item">Kidney</a>
+                                <a href="https://heart-predictdiu.herokuapp.com/" class="dropdown-item">Heart</a>
+                                <a href="https://diabetes-predictionsdiu.herokuapp.com/" class="dropdown-item">Diabetes</a>
+                                <a href="https://skin-cancer-detector.herokuapp.com/" class="dropdown-item">Skin</a>
+                                <a href="https://liverdiu.herokuapp.com/" class="dropdown-item">Liver</a>
                             </div>
                         </div>
                         <a href="" class="nav-item nav-link">Contact</a>
@@ -114,27 +114,27 @@
 
         <form action="/predict" method="post">
             <div class="form-group">
-                <label>Enter Your Glucose Level</label>
-                <input type="text" class="form-control" name="Glucose Level" placeholder="Glucose Level" required="required" />
+                <label>Enter Your Glucose Level (mg/dL)  <a href="https://www.mayoclinic.org/diseases-conditions/diabetes/diagnosis-treatment/drc-20371451#:~:text=A%20blood%20sugar%20level%20less,L)%20means%20you%20have%20prediabetes." target="_blank" class="btn btn-secondary" >Details</a></label>
+                <input type="number" class="form-control" name="Glucose Level" placeholder="Glucose Level (mg/dL)" required="required" />
             </div>
             <div class="form-group">
-                <label>Select Your Insulin Level</label>
-                <input type="text" class="form-control" name="Insulin" id="Insulin" placeholder="Insulin Level" required="required" />
-            </div>
-
-            <div class="form-group">
-                <label>Enter Your BMI</label>
-                <input type="text" class="form-control" name="BMI" placeholder="Enter BMI" required="required" />
+                <label>Select Your Insulin Level <a href="https://emedicine.medscape.com/article/2089224-overview" target="_blank" class="btn btn-secondary" >Details</a></label>
+                <input type="number" class="form-control" name="Insulin" id="Insulin" placeholder="Insulin Level" required="required" />
             </div>
 
             <div class="form-group">
-                <label>Enter Your Diabetes PF</label>
-                <input type="text" class="form-control" name="Diabetes PF" placeholder="Enter Diabetes PF" required="required" />
+                <label>Enter Your BMI <a href="https://www.nhlbi.nih.gov/health/educational/lose_wt/BMI/bmicalc.htm" target="_blank" class="btn btn-secondary" >Calculate</a></label>
+                <input type="number" class="form-control" name="BMI" placeholder="Enter BMI" required="required" />
+            </div>
+
+            <div class="form-group">
+                <label>Enter Your Diabetes Pedigree Function <a href="https://www.analyticsvidhya.com/blog/2021/07/diabetes-prediction-with-pycaret/" target="_blank" class="btn btn-secondary" >Details</a></label>
+                <input type="number" class="form-control" name="Diabetes PF" placeholder="Enter Diabetes PF" required="required" />
             </div>
 
             <div class="form-group">
                 <label>Enter Your Age</label>
-                <input type="text" class="form-control" name="Age" placeholder="Enter Age" required="required" />
+                <input type="number" class="form-control" name="Age" placeholder="Enter Age" required="required" />
             </div>
 
             <div>
@@ -230,6 +230,22 @@
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {},
+            Tawk_LoadStart = new Date();
+        (function() {
+            var s1 = document.createElement("script"),
+                s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/6318390a37898912e967b143/1gcb9tl51';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
 
 
     <!-- JavaScript Libraries -->
